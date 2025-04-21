@@ -114,7 +114,7 @@
     "group_by_netclass": false,
     "show_unconnected_nets": false,
     "show_zero_pad_nets": false,
-    "sort_ascending": true,
+    "sort_ascending": false,
     "sorting_column": 0
   },
   "open_jobsets": [],
