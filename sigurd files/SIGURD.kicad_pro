@@ -586,14 +586,26 @@
         },
         {
           "group_by": false,
-          "label": "Field4",
-          "name": "Field4",
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         },
         {
           "group_by": false,
           "label": "mfn",
           "name": "mfn",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field4",
+          "name": "Field4",
           "show": false
         },
         {

@@ -1086,7 +1086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d208a28-16ae-4b29-a38a-a005bf99d92e")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR063"
 			(at 111.76 80.01 0)
 			(effects
 				(font
@@ -1137,7 +1137,7 @@
 		(instances
 			(project "SIGURD"
 				(path "/a4a592a3-08d1-41ec-9dda-18a75407e2f6/a5e08dc3-4335-44e4-be16-38fa9099f3c5"
-					(reference "#PWR033")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -1153,7 +1153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76428161-89f0-4848-af48-2637b95fbf3a")
-		(property "Reference" "U7"
+		(property "Reference" "U5"
 			(at 163.83 45.72 0)
 			(effects
 				(font
@@ -1243,7 +1243,7 @@
 		(instances
 			(project "SIGURD"
 				(path "/a4a592a3-08d1-41ec-9dda-18a75407e2f6/a5e08dc3-4335-44e4-be16-38fa9099f3c5"
-					(reference "U7")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -1259,7 +1259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b45a5aa8-10f0-4c0a-beaf-5f88478f958d")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR061"
 			(at 110.49 63.5 0)
 			(effects
 				(font
@@ -1310,7 +1310,7 @@
 		(instances
 			(project "SIGURD"
 				(path "/a4a592a3-08d1-41ec-9dda-18a75407e2f6/a5e08dc3-4335-44e4-be16-38fa9099f3c5"
-					(reference "#PWR044")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -1326,7 +1326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c32f2d0e-05bb-4c9e-8282-08d8e2ba11c9")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR062"
 			(at 190.5 63.5 0)
 			(effects
 				(font
@@ -1377,7 +1377,7 @@
 		(instances
 			(project "SIGURD"
 				(path "/a4a592a3-08d1-41ec-9dda-18a75407e2f6/a5e08dc3-4335-44e4-be16-38fa9099f3c5"
-					(reference "#PWR047")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -1393,7 +1393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c751e2b0-f324-4563-be32-d49bab77da64")
-		(property "Reference" "C3"
+		(property "Reference" "C20"
 			(at 107.95 69.8501 0)
 			(effects
 				(font
@@ -1447,7 +1447,7 @@
 		(instances
 			(project "SIGURD"
 				(path "/a4a592a3-08d1-41ec-9dda-18a75407e2f6/a5e08dc3-4335-44e4-be16-38fa9099f3c5"
-					(reference "C3")
+					(reference "C20")
 					(unit 1)
 				)
 			)
