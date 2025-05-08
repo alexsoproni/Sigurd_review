@@ -1198,6 +1198,14 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 143.51 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "11"
 			(uuid "926698ab-10a0-47bc-bea7-4c4ed41baf0d")
 		)
@@ -1436,6 +1444,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 111.76 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
