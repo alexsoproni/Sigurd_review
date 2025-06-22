@@ -405,49 +405,35 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
         {
             Motor_PWM(0); // OFF
         }
-        else if ((RxHeader.DataLength == FDCAN_DLC_BYTES_1) && (RxData[0] == 'R' || RxData[0] == 'G' || RxData[0] == 'B')) {
-
-        }
-
     }
 }
 
-
-
-void initLED(TimHandleTypeDef* htim) {
-}
-
-
-
 void Motor_PWM(uint8_t STATUS) {
 	initMotor();
-	Hal_Delay(6000);
-	setMotorSpeed();
-
 }
 
 void initMotor() {
     TIM_HandleTypeDef *htim = &MOTOR_TIMER_HANDLE; // MOTOR_TIMER_HANDLE is a #defined variable
     setPWM(htim, MOTOR_TIMER_CHANNEL, 0.05); // Initial 5% duty cycle
-    HAL_Delay(6000);
+    HAL_TIM_PWM_Start(htim, MOTOR_TIMER_CHANNEL); // Start PWM 
+    HAL_Delay(5000);
 }
 
-void setPWM(TIM_HandleTypeDef timer_handle, uint32_t timer_channel, float duty) {
+void setPWM(TIM_HandleTypeDef *timer_handle, uint32_t timer_channel, float duty) {
     uint32_t counter_period = __HAL_TIM_GET_AUTORELOAD(timer_handle); // Get the ARR value (number of ticks per period)
     uint32_t new_duty = duty * counter_period; // Calculate new duty value
-    HAL_TIM_DISABLE(timer_handle);
-    HAL_TIM_SET_COMPARE(timer_handle, timer_channel, new_duty); // Set compare value to new duty
-    __HAL_TIM_ENABLE(timer_handle);
-    HAL_TIM_PWM_Start(timer_handle, timer_channel); // Start PWM
+    //__HAL_TIM_DISABLE(timer_handle);
+    __HAL_TIM_SET_COMPARE(timer_handle, timer_channel, new_duty); // Set compare value to new duty
 }
 
-void setMotorSpeed(float throttle) {
+void setMotorSpeed(float throttle) { // if statements to restrict duty between 0.05f and 0.1f 
 
-    TIM_HandleTypeDef htim = &MOTOR_TIMER_HANDLE;
-    float duty = throttle*5 / 100.0f + 0.05f;
+    TIM_HandleTypeDef *htim = &MOTOR_TIMER_HANDLE;
+    float duty = throttle*0.05f + 0.05f;
     setPWM(htim, MOTOR_TIMER_CHANNEL, duty);
     status.setMotorSpeed(throttle);
 }
+
 
 /* USER CODE END 4 */
 
